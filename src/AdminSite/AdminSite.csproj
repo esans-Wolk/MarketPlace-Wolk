@@ -12,6 +12,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json.Prod" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json.Prod" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="appsettings.json" />
     <None Include="wwwroot\js\site.js" />
     <None Include="wwwroot\lib\bootstrap\LICENSE" />
     <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
@@ -27,18 +40,18 @@
   </ItemGroup>
 
   <ItemGroup>
-	<PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="8.0.0" />
+	<PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="8.0.10" />
 	<PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="8.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="8.0.0" />
-	<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6" />
-	<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.6">
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="8.0.10" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-	  <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.10.0" />
-	  <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.10.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.11.0" />
+	  <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.11.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.1" />
 	 
   </ItemGroup>
 

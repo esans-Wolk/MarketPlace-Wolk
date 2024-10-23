@@ -103,6 +103,7 @@ public class Startup
                 options.SignedOutRedirectUri = config.SignedOutRedirectUri;
                 options.TokenValidationParameters.NameClaimType = ClaimConstants.CLAIM_SHORT_NAME;
                 options.TokenValidationParameters.ValidateIssuer = false;
+                options.RequireHttpsMetadata = false;
             });
         services
             .AddTransient<IClaimsTransformation, CustomClaimsTransformation>()
